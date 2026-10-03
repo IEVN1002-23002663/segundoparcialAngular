@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zodiaco Chino</title>
+</head>
+
+<body>
+
+  <h1>Datos Personales</h1>
+
+  <form>
+
+    <label>Nombre</label>
+    <input
+      type="text"
+      placeholder="Nombre"
+      [(ngModel)]="nombre"
+      name="nombre">
+
+    <br><br>
+
+    <label>Paterno</label>
+    <input
+      type="text"
+      placeholder="Paterno"
+      [(ngModel)]="paterno"
+      name="paterno">
+
+    <br><br>
+
+    <label>Materno</label>
+    <input
+      type="text"
+      placeholder="Materno"
+      [(ngModel)]="materno"
+      name="materno">
+
+    <br><br>
+
+    <label>Fecha de Nacimiento</label>
+
+    <br><br>
+
+    <label>Dia</label>
+    <input
+      type="text"
+      placeholder="Dia"
+      [(ngModel)]="dia"
+      name="dia">
+
+    <br><br>
+
+    <label>Mes</label>
+    <input
+      type="text"
+      placeholder="Mes"
+      [(ngModel)]="mes"
+      name="mes">
+
+    <br><br>
+
+    <label>Año</label>
+    <input
+      type="text"
+      placeholder="Año"
+      [(ngModel)]="anio"
+      name="anio">
+
+    <br><br>
+
+    <label>Femenino</label>
+    <input
+      type="radio"
+      name="sexo"
+      value="Femenino"
+      [(ngModel)]="sexo">
+
+    <br>
+
+    <label>Masculino</label>
+    <input
+      type="radio"
+      name="sexo"
+      value="Masculino"
+      [(ngModel)]="sexo">
+
+    <br><br>
+
+    <button
+      type="button"
+      (click)="imprimir()">
+      Imprimir
+    </button>
+
+  </form>
+
+  <h2>
+    Hola {{ nombre }} {{ paterno }} {{ materno }}
+  </h2>
+
+  <h2>
+    Tu edad es {{ edad }}
+  </h2>
+
+  <h2>
+    Tu signo es {{ signo }}
+  </h2>
+
+  <img
+    src="/img/{{ img }}"
+    width="150">
+
+</body>
+
+</html>

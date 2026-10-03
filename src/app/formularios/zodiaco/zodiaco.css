@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  color: blue;
+}
+button {
+  background-color: beige;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
