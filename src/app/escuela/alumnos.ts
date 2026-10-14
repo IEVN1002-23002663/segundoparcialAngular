@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-export interface IAlumnos {
+export interface IAlumno {
     matricula: string;
     nombre: string;
     correo: string;

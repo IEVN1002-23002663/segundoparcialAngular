@@ -1,17 +1,10 @@
 <div class="max-w-2xl mx-auto p-6 bg-gray rounded-lg shadow">
-
-  <h1 class="text-3xl font-bold text-gray-900 mb-6">
-    Cinépolis
-  </h1>
+  <h1 class="text-3xl font-bold text-gray-900 mb-6">Cinépolis</h1>
 
   <form [formGroup]="formulario">
-
     <!-- Nombre -->
     <div class="mb-5">
-
-      <label
-        for="nombre"
-        class="block mb-2 text-sm font-medium text-gray-900">
+      <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900">
         Nombre
       </label>
 
@@ -22,16 +15,16 @@
         formControlName="nombre"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-        placeholder="Nombre">
-
+        placeholder="Nombre"
+      />
     </div>
 
     <!-- Cantidad de compradores -->
     <div class="mb-5">
-
       <label
         for="compradores"
-        class="block mb-2 text-sm font-medium text-gray-900">
+        class="block mb-2 text-sm font-medium text-gray-900"
+      >
         Cantidad de Compradores
       </label>
 
@@ -42,15 +35,13 @@
         formControlName="compradores"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-        placeholder="Cantidad de compradores">
-
+        placeholder="Cantidad de compradores"
+      />
     </div>
 
     <!-- Tarjeta CINECO -->
     <div class="mb-5">
-
-      <label
-        class="block mb-2 text-sm font-medium text-gray-900">
+      <label class="block mb-2 text-sm font-medium text-gray-900">
         Tarjeta CINECO
       </label>
 
@@ -59,31 +50,25 @@
         id="si"
         name="tarjeta"
         [value]="true"
-        formControlName="tarjeta">
+        formControlName="tarjeta"
+      />
 
-      <label for="si">
-        Sí
-      </label>
+      <label for="si"> Sí </label>
 
       <input
         type="radio"
         id="no"
         name="tarjeta"
         [value]="false"
-        formControlName="tarjeta">
+        formControlName="tarjeta"
+      />
 
-      <label for="no">
-        No
-      </label>
-
+      <label for="no"> No </label>
     </div>
 
     <!-- Cantidad de boletos -->
     <div class="mb-5">
-
-      <label
-        for="boletos"
-        class="block mb-2 text-sm font-medium text-gray-900">
+      <label for="boletos" class="block mb-2 text-sm font-medium text-gray-900">
         Cantidad de Boletos
       </label>
 
@@ -94,55 +79,40 @@
         formControlName="boletos"
         required
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-        placeholder="Ingresar cantidad de boletos">
-
+        placeholder="Ingresar cantidad de boletos"
+      />
     </div>
 
     <!-- Botón -->
     <div class="flex justify-end mt-5">
-
       <button
         type="button"
         (click)="muestraCinepolis()"
-        class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">
+        class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5"
+      >
         Procesar
       </button>
-
     </div>
     <div class="flex justify-end mt-5">
-
       <button
-      type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5">
-      Salir
+        type="button"
+        class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5"
+      >
+        Salir
       </button>
-
     </div>
-
   </form>
 
   <!-- Salida -->
-  <h1 class="text-2xl font-bold mt-6 mb-4">
-    Salida
-  </h1>
+  <h1 class="text-2xl font-bold mt-6 mb-4">Salida</h1>
 
-  <h2>
-    Valor a Pagar: ${{nuevoCinepolis.valorPagar}}
-  </h2>
+  <h2>Valor a Pagar: ${{nuevoCinepolis.valorPagar}}</h2>
 
-  <h2>
-    Nombre: {{nuevoCinepolis.nombre}}
-  </h2>
+  <h2>Nombre: {{nuevoCinepolis.nombre}}</h2>
 
-  <h2>
-    Compradores: {{nuevoCinepolis.compradores}}
-  </h2>
+  <h2>Compradores: {{nuevoCinepolis.compradores}}</h2>
 
-  <h2>
-    Tarjeta: {{nuevoCinepolis.tarjeta ? 'Sí' : 'No'}}
-  </h2>
+  <h2>Tarjeta: {{nuevoCinepolis.tarjeta ? 'Sí' : 'No'}}</h2>
 
-  <h2>
-    Número de Boletos: {{nuevoCinepolis.boletos}}
-  </h2>
-
+  <h2>Número de Boletos: {{nuevoCinepolis.boletos}}</h2>
 </div>
